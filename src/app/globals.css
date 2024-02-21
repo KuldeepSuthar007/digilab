@@ -1,33 +1,349 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: rgba(17, 23, 41, 1);
+}
+main {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: rgba(17, 23, 41, 1);
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 10vw;
+}
+.main_container {
+  display: flex;
+  border-radius: 40px;
+  padding: 40px 40px 20px 40px;
+  background-color: rgba(21, 28, 57, 1);
+}
+.left_section {
+  display: flex;
+  flex-direction: column;
+}
+.top_left {
+  display: flex;
+  flex-direction: column;
+}
+.top_lefthead {
+  display: flex;
+}
+.greeting_msg {
+  display: flex;
+  font-family: Manrope;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: Manrope;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.searchbox {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 5px;
+  margin: 0px 20px;
+  background-color: rgba(44, 58, 88, 1);
+}
+.searchbox input {
+  width: 30vw;
+  height: 60px;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: transparent;
+}
+.searchbox button {
+  border: none;
+  outline: none;
+  background-color: white;
+  background: transparent;
+}
+.searchbox button img {
+  width: 24px;
+}
+.notification {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  background-color: rgba(64, 155, 238, 1);
+}
+.topleft_bot {
+  display: flex;
+}
+.bottom_left {
+  display: flex;
+}
+.activepatients p,
+.upcomingevent p {
+  margin: 10px 0px;
+  font-family: Manrope;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+.profile {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgba(252, 213, 216, 1);
+}
+
+.chatwindow {
+  display: flex;
+}
+.messagerbox {
+  width: 45px;
+  background-color: linear-gradient(0deg, #000000, #000000),
+    linear-gradient(0deg, #e8f8bb, #e8f8bb);
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+.chat_textarea {
+  display: flex;
+}
+.right_section {
+  text-align: center;
+  border-radius: 40px;
+  margin-left: 40px;
+  padding: 20px;
+  background-color: rgba(17, 23, 41, 1);
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  border-radius: 50%;
+  background-color: rgba(189, 216, 240, 1);
+}
+.name {
+  font-family: Manrope;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+.specialistname {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(204, 204, 204, 1);
+}
+.midbox {
+  /* height: 80px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  padding: 10px 20px;
+  background-color: rgba(28, 42, 78, 1);
+}
+.active_patients {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  margin-right: 20px;
+}
+.chatcontainer {
+  /* height: 380px; */
+  background-color: rgba(28, 42, 78, 1);
+  border-radius: 30px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.chattopdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 100%;
+  /* padding: 10px 25px; */
+}
+.chattopdiv div {
+  display: flex;
+}
+.chat_profile1 {
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  margin-top: 10px;
+  background-color: rgba(232, 248, 187, 1);
+}
+
+.profile_name {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 40px 0px 10px;
+}
+.p1_name {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+.p1_time {
+  font-family: Manrope;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(204, 204, 204, 1);
+}
+.callicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(44, 58, 88, 1);
+}
+.profile2 {
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  margin-top: 70px;
+  background-color: rgba(189, 216, 240, 1);
+}
+.chat {
+  padding: 10px;
+}
+.msgsender {
+  width: fit-content;
+  font-family: Manrope;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 10px 10px;
+  color: rgba(0, 0, 0, 1);
+  border-radius: 10px;
+  background-color: rgba(241, 241, 241, 1);
+  margin-top: 10px;
+}
+.msgreceiver {
+  margin-left: 10px;
+  width: fit-content;
+  font-family: Manrope;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: right;
+  padding: 10px 10px;
+  color: rgba(0, 0, 0, 1);
+  border-radius: 10px;
+  background-color: rgba(189, 216, 240, 1);
+  margin-top: 10px;
+}
+.timestamp {
+  font-family: Manrope;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(204, 204, 204, 1);
+}
+.timestampr {
+  font-family: Manrope;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: rgba(204, 204, 204, 1);
+}
+.textbox {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  border-radius: 20px;
+  background-color: white;
+  background-color: rgba(44, 58, 88, 1);
+}
+.textbox input {
+  width: 100%;
+  height: 60px;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  font-family: Manrope;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  background: transparent;
+}
+.textbox button {
+  border: none;
+  outline: none;
+  background-color: white;
+  background: transparent;
+}
+.textbox button img {
+  margin: 0px 10px;
+}
+.sendbtn {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: rgba(64, 155, 238, 1);
 }

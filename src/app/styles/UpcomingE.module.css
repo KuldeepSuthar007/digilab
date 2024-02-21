@@ -1,0 +1,55 @@
+.Card_box {
+  width: 250px;
+  height: 150px;
+  background-color: rgba(27, 44, 79, 1);
+  border-radius: 30px;
+  padding: 10px;
+  margin: 10px 0px 10px 20px;
+}
+.top_botbox {
+  display: flex;
+  justify-content: space-between;
+}
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 22px;
+  border-radius: 15px;
+  background-color: rgba(64, 155, 238, 1);
+}
+.notification {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  background-color: rgba(44, 58, 88, 1);
+}
+.topbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+.time {
+  font-family: Manrope;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(220, 220, 220, 1);
+}

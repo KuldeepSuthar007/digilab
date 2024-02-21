@@ -1,0 +1,6 @@
+.Card_box {
+  width: 350px;
+  height: 350px;
+  background-color: rgba(27, 44, 79, 1);
+  border-radius: 40px;
+}
